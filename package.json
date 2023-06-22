@@ -44,5 +44,13 @@
   },
   "dependencies": {
     "firebase": "^9.22.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/styleMock.js"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"]
   }
 }
