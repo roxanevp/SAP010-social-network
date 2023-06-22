@@ -49,6 +49,8 @@
     "testEnvironment": "jsdom",
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "<rootDir>/styleMock.js"
-    }
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"]
   }
 }

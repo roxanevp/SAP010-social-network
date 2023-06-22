@@ -1,13 +1,11 @@
 import { validarEmail, validarSenha, fazerLogin } from '../src/Login/login';
 
-// Cria uma versão da função authLogin para usar nos testes, sem precisar
-// acessar o Firebase de verdade.
 jest.mock('../src/lib/index', () => ({
   authLogin: jest.fn(async (email, senha) => {
     if (email === 'teste@gmail.com' && senha === '123456') {
       return true;
     }
-  
+
     throw new Error('Error');
   }),
 }));
@@ -98,7 +96,7 @@ describe('Login', () => {
     fazerLogin(login, userEmail, userSenha, txtError);
     login.click();
 
-    await (new Promise((resolve) => setTimeout(resolve, 1)));
+    await (new Promise((resolve) => { setTimeout(resolve, 1); }));
     const resultado = txtError.innerHTML;
 
     expect(resultado).toBe('Usuário ou senha incorretos');
@@ -119,7 +117,7 @@ describe('Login', () => {
     fazerLogin(login, userEmail, userSenha, txtError);
     login.click();
 
-    await (new Promise((resolve) => setTimeout(resolve, 1)));
+    await (new Promise((resolve) => { setTimeout(resolve, 1); }));
 
     expect(window.location.hash).toBe('#feed');
   });
