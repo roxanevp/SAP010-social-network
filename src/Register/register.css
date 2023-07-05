@@ -296,7 +296,7 @@
 
 @media screen and (max-width: 490px) {
   .backgroundTwo {
-    border-width: 385px 480px 0 0;
+    border-width: 365px 490px 0 0;
   }
 
   .imagemLogo {
@@ -305,7 +305,7 @@
 
   .imagemMap {
     display: flex;
-    left: 90px;
+    left: 60px;
     margin-right: 10px;
     position: absolute;
     right: 10px;
@@ -324,11 +324,69 @@
   }
 
   .register-form {
-    height: 330px;
-    left: 90px;
+    height: 370px;
+    left: 50px;
     right: 85px;
     top: 320px;
-    width: 290px;
+    width: 320px;
+  }
+
+  .inputs {
+    display: flex;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    padding: 7px 10px;
+  }
+
+  .botoes-register {
+    gap: 20px;
+  }
+
+  .button-register {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 8px 10px;
+    width: 250px;
+  }
+
+  .register-message {
+    font-size: 0.5rem;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .backgroundTwo {
+    border-width: 365px 470px 0 0;
+  }
+  
+  .imagemMap {
+    display: flex;
+    left: 60px;
+    margin-right: 10px;
+    position: absolute;
+    right: 10px;
+    transform: rotate(-4.39deg);
+    top: 8px;
+    width: 300px;
+  }
+
+  .register-titulo {
+    font-size: 1.8rem;
+  }
+
+  .titulo-sub {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+
+  .register-form {
+    height: 370px;
+    left: 50px;
+    right: 85px;
+    top: 320px;
+    width: 320px;
   }
 
   .inputs {

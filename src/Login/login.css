@@ -315,23 +315,8 @@
 }
 
 @media screen and (max-width: 490px) {
-  .imagemMap {
-    display: flex;
-    left: 90px;
-    margin-right: 10px;
-    position: absolute;
-    right: 25px;
-    top: 8px;
-    transform: rotate(-4.39deg);
-    width: 300px;
-  }
-
   .imagemLogo {
     display: none;
-  }
-
-  .backgroundTwo {
-    border-width: 385px 480px 0 0;
   }
 
   .subtitulo {
@@ -344,11 +329,11 @@
   }
 
   .form {
-    height: 370px;
-    left: 95px;
+    height: 330px;
+    left: 50px;
     right: 85px;
     top: 320px;
-    width: 300px;
+    width: 320px;
   }
 
   .form input {
@@ -362,7 +347,69 @@
     font-size: 0.8rem;
     margin-left: 9px;
     padding: 8px;
-    width: 80px;
+    width: 150px;
+  }
+
+  .logo {
+    margin-right: 2px;
+    margin-top: 25px;
+  }
+
+  .form .messageLogin {
+    font-size: 0.8rem;
+    margin-top: 15px;
+  }
+
+  .txtError {
+    font-size: 0.7rem;
+    margin-top: 5px;
+    color: #FF0000;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .imagemMap {
+    display: flex;
+    left: 0px;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-4.39deg);
+    width: 300px;
+  }
+
+  .imagemLogo {
+    display: none;
+  }
+
+  .subtitulo {
+    display: none;
+  }
+
+  .login-titulo {
+    font-size: 1.8rem;
+    top: 15px;
+  }
+
+  .form {
+    height: 330px;
+    left: 50px;
+    right: 85px;
+    top: 320px;
+    width: 320px;
+  }
+
+  .form input {
+    display: flex;
+    font-size: 0.8rem;
+    margin-top: 25px;
+    padding: 5px 10px;
+  }
+
+  .form button {
+    font-size: 0.8rem;
+    margin-left: 9px;
+    padding: 8px;
+    width: 150px;
   }
 
   .logo {

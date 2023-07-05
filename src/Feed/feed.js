@@ -116,7 +116,6 @@ export const feedUser = () => {
     const card = ({
       description,
       likes,
-      rating,
       restaurantName,
       userAvatar,
       userName,
@@ -135,7 +134,6 @@ export const feedUser = () => {
               <div class="card-avatar"> <img referrerpolicy='no-referrer' src="${userAvatar}"/></div>
               <div>
               <h5>${userName}</h5>
-              <h5>Nota: ${rating}/5</h5>
               </div>
             </div>
             ${userId === myUserId ? `<div class='card-actions'>
