@@ -77,7 +77,6 @@ Desenvolvemos testes unitários abrangendo as funcionalidades do Firebase e do F
 
 <img src="src/img/testes-unitarios.png" width="520em"/>
 
-
 ## 6. Objetivos alcançados :white_check_mark:
 
 * [:star:] construir uma Single-page Application (SPA) responsiva na qual seja possível ler e escrever dados;
@@ -96,8 +95,6 @@ Desenvolvemos testes unitários abrangendo as funcionalidades do Firebase e do F
 * [:star:] Usuário pode curtir publicações;
 * [:star:] Usuário pode editar e excluir as suas publicações;
 * [:star:] Posts são atualizados em tempo real.
-
-
 
 ## 7. Equipe do Projeto :busts_in_silhouette:
 
