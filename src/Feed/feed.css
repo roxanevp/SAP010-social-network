@@ -8,7 +8,8 @@ a {
   width: 100vw;
   height: 100vh;
   min-height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 main {
