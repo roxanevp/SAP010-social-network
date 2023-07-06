@@ -47,7 +47,7 @@ O Food Review é um website voltado para os amantes de lugares culinários, com 
 
 ## 3. Protótipo :pen:
 
-Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um tema moderno e sofisticado, escolhendo cores presente na gastronomia.
+Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um tema moderno e sofisticado, escolhendo cores presentes na gastronomia.
 
 ### Versão Mobile
 
@@ -59,7 +59,7 @@ Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um 
 ![Desktop 1](src/Img/prototipo-web1.jpg)
 ![Desktop 2](src/Img/feed-desktop.png)
 
-## 4. Teste de Usuabilidade :iphone:
+## 4. Teste de Usabilidade :iphone:
 
  Os testes de usabilidade foram feitos com potenciais usuários ao longo do desenvolvimento do projeto. 
 
@@ -68,9 +68,7 @@ Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um 
  * Adicionamos um link de volta na tela de cadastro que permite o usuário retornar facilmente à tela de login, caso já possua um cadastro.
  * Incluir uma mensagem informado que o cadastro foi realizado com sucesso.
  * Retirar a opção de login com o facebook, por apresentar problemas no momento de efetivar a autenticação de alguns usuários.
- * Inserir algum conteúdo que esclareça qual é o objetivo de nossa rede social.
-
- Essas alterações foram feitas com base no feedback fornecido pelos usuários para aprimorar a sua experiência geral do nosso projeto.
+ * Inserir algum conteúdo que esclareça qual é o objetivo da nossa rede social.
 
 ## 5. Testes Unitários :ok_hand:
 
