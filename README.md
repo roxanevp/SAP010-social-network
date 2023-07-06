@@ -45,6 +45,7 @@ O Food Review é um website voltado para os amantes de lugares culinários, com 
 
 <img src="src/img/historias-usuarios.png" width="520em"/>
 
+
 ## 3. Protótipo :pen:
 
 Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um tema moderno e sofisticado, escolhendo cores presente na gastronomia.
