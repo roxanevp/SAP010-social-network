@@ -6,7 +6,7 @@ import {
   GoogleAuthProvider,
   signOut,
   // getAuth,
-  // updateProfile,
+  updateProfile,
   onAuthStateChanged,
 } from 'firebase/auth';
 import {
@@ -89,12 +89,24 @@ describe('Firebase', () => {
     expect(GoogleAuthProvider).toHaveBeenCalledTimes(1);
   });
 
-  test('Criar novo usuario', async () => {
-    const email = 'josédasilva@gmail.com';
-    const senha = '123456';
+  describe('Teste newUser', () => {
+    afterEach(() => {
+      jest.clearAllMocks(); // Limpa todos os mocks após cada teste
+    });
+    test('Criar novo usuario', async () => {
+      const email = 'josédasilva@gmail.com';
+      const senha = '123456';
 
-    await newUser(email, senha);
-    expect(createUserWithEmailAndPassword).toHaveBeenCalledWith(auth, email, senha);
+      const mockUserCredential = {
+        user: 'mockedUser',
+      };
+      createUserWithEmailAndPassword.mockResolvedValueOnce(mockUserCredential);
+      await newUser(email, senha);
+      expect(createUserWithEmailAndPassword)
+        .toHaveBeenCalledWith(auth, email, senha);
+      expect(updateProfile)
+        .toHaveBeenCalledWith(mockUserCredential.user, { displayName: undefined });
+    });
   });
 
   test('Criar novo post', async () => {
