@@ -43,8 +43,7 @@ O Food Review é um website voltado para os amantes de lugares culinários, com 
 
 ## 2. Histórias de Usuários :mag:
 
-<img src="src/img/historias-usuarios.png" width="520em"/>
-
+![Histórias de Usuários](src/Img/historias-usuarios.png)
 
 ## 3. Protótipo :pen:
 
@@ -52,12 +51,13 @@ Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um 
 
 ### Versão Mobile
 
-<img src="src/img/prototipo-mobile2.jpg" width="520em"/>
-<img src="src/img/feed-mobile1.png" width="520em"/>
+![Mobile 2](src/Img/prototipo-mobile2.jpg)
+![Mobile 1](src/Img/feed-mobile1.png)
 
 ### Versão Web
-<img src="src/img/prototipo-web1.jpg" width="520em"/>
-<img src="src/img/feed-desktop.png" width="520em"/>
+
+![Desktop 1](src/Img/prototipo-web1.jpg)
+![Desktop 2](src/Img/feed-desktop.png)
 
 ## 4. Teste de Usuabilidade :iphone:
 
@@ -76,7 +76,6 @@ Desenvolvemos nossos protótipos de alta fidelidade no Figma, tendo em mente um 
 
 Desenvolvemos testes unitários abrangendo as funcionalidades do Firebase e do Firestore. 
 
-<!-- <img src="src/img/testes-unitarios.png" width="520em"/> -->
 ![Testes Unitários](src/Img/testes-unitarios.png)
 
 ## 6. Objetivos alcançados :white_check_mark:

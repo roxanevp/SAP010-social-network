@@ -59,15 +59,15 @@
 }
 
 .p1 {
-  background: url("Img/foto-mislene.png") center;
+  background: url("/Img/foto-mislene.png") center;
 }
 
 .p2 {
-  background: url("Img/foto-nivia.jpeg") center;
+  background: url("/Img/foto-nivia.jpeg") center;
 }
 
 .p3 {
-  background: url("Img/foto-roxane.jpeg") center;
+  background: url("/Img/foto-roxane.jpeg") center;
 }
 
 .cube {
