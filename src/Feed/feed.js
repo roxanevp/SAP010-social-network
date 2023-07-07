@@ -109,7 +109,7 @@ export const feedUser = () => {
       if (user.photoURL) {
         userPhotoElement.src = user.photoURL;
       } else {
-        userPhotoElement.src= userPhotoAvatar;
+        userPhotoElement.src = userPhotoAvatar;
       }
     }
   });
