@@ -68,6 +68,7 @@ export const feedUser = () => {
           <textarea class='inputLocation' type="text" id="postLocation" placeholder="Restaurante"required></textarea>
           <button type='button' class='buttonPublish' id="publishButton" onclick="publishPost()">Publicar</button>
         </div>
+        <p id='messageContainer'></p>
       </form>
     </div>
   </div>
@@ -102,12 +103,13 @@ export const feedUser = () => {
       const userNameElement = document.getElementById('userName');
       const userIdElement = document.getElementById('userId');
       const userPhotoElement = document.getElementById('userPhoto');
+      const userPhotoAvatar = 'Img/Usuario.png';
       userNameElement.textContent = user.displayName;
       userIdElement.value = user.uid;
       if (user.photoURL) {
         userPhotoElement.src = user.photoURL;
       } else {
-        userPhotoElement.style.display = 'none'; // Oculta o elemento se não houver foto de perfil
+        userPhotoElement.src= userPhotoAvatar;
       }
     }
   });
@@ -169,6 +171,12 @@ async function publishPost() {
   const postContent = document.getElementById('postContent');
   const userId = document.getElementById('userId');
   const postId = document.getElementById('postPublishId');
+  const messageContainer = document.getElementById('messageContainer');
+
+  if (postContent.value.trim() === '' || postLocation.value.trim() === '') {
+    messageContainer.textContent = 'Gostariamos de saber a sua experiência, não se esqueça de preencher todos os campos!';
+    return;
+  }
 
   const post = {
     description: postContent.value,
