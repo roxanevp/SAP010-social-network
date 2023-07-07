@@ -8,15 +8,14 @@ a {
   width: 100vw;
   height: 100vh;
   min-height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 main {
   display: flex;
   background-color: var(--BackcgroundColor);
   min-height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .menuIcon, #chec {
@@ -370,6 +369,13 @@ article h2 {
   font-weight: bolder;
 }
 
+#messageContainer {
+  font-size: 0.8rem;
+  color: var(--CorPrimaria);
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
 @media screen and (max-width: 1235px) {
   .post-content {
     left: 25%;
@@ -474,9 +480,24 @@ article h2 {
   .buttonPublish {
     font-size: 0.7rem;
   }
+
+  #messageContainer {
+    font-size: 0.7rem;
+    color: var(--CorPrimaria);
+    margin-top: 10px;
+    margin-left: 25px;
+  }
 }
 
 @media screen and (max-width: 730px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
   .nav-container .checkbox {
     position: absolute;
     display: block;
@@ -855,5 +876,13 @@ article h2 {
 
   .post-list {
     margin-bottom: 10%;
+  }
+
+  #messageContainer {
+    font-size: 0.7rem;
+    color: var(--CorPrimaria);
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
   }
 }
